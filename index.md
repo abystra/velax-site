@@ -17,10 +17,13 @@ date: 2026-06-17
 
 目前打算围绕几个方向来写：
 
-- **后端踩坑** — Go、Rust、分布式系统，实际项目中碰到的问题和溯源过程
-- **源码阅读** — 读一些优秀开源项目的实现，记录设计思路
-- **工程实践** — CI/CD、可观测性、性能调优，折腾过的事
-- **偶尔感想** — 关于技术选型、职业成长之类的碎碎念
+- **[DevOps](/devops/)** — CI/CD、Linux、Docker & K8s、监控告警、云服务配置
+- **[Agent 开发](/agent/)** — LLM 应用、MCP 协议、工具调用、RAG、Prompt 工程
+- **[Java 开发](/java/)** — Spring Boot / Cloud、JVM 调优、并发编程
+- **[Python 开发](/python/)** — FastAPI、数据处理、自动化脚本
+- **[前端开发](/frontend/)** — Vue / React、CSS、构建工具、TypeScript
+- **[问题记录](/troubleshooting/)** — 实际踩过的坑和排查过程
+- **[指令备忘](/cheatsheets/)** — 常用命令、配置片段速查
 
 不会追求高频更新，但会尽量保证**每篇都有扎实的内容**。
 

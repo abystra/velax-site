@@ -19,7 +19,43 @@ export default defineConfig({
       { text: '归档', link: '/archives' },
     ],
 
-    sidebar: false,
+    sidebar: [
+      {
+        text: 'DevOps',
+        collapsed: false,
+        items: [{ text: '概述', link: '/devops/' }],
+      },
+      {
+        text: 'Agent 开发',
+        collapsed: false,
+        items: [{ text: '概述', link: '/agent/' }],
+      },
+      {
+        text: 'Java 开发',
+        collapsed: false,
+        items: [{ text: '概述', link: '/java/' }],
+      },
+      {
+        text: 'Python 开发',
+        collapsed: false,
+        items: [{ text: '概述', link: '/python/' }],
+      },
+      {
+        text: '前端开发',
+        collapsed: false,
+        items: [{ text: '概述', link: '/frontend/' }],
+      },
+      {
+        text: '问题记录',
+        collapsed: false,
+        items: [{ text: '概述', link: '/troubleshooting/' }],
+      },
+      {
+        text: '指令备忘',
+        collapsed: false,
+        items: [{ text: '概述', link: '/cheatsheets/' }],
+      },
+    ],
 
     footer: {
       message: 'Released under the MIT License.',
