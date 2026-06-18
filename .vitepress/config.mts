@@ -5,7 +5,7 @@ export default defineConfig({
   title: 'velax',
   description: '写代码、学架构、聊技术。',
 
-  base: '/velax-site/',
+  base: '/',
 
   cleanUrls: true,
   lastUpdated: true,
