@@ -9,9 +9,29 @@ export default defineConfig({
 
   cleanUrls: true,
   lastUpdated: true,
+  srcExclude: ['docs/**'],
 
   server: {
     host: '0.0.0.0',
+  },
+
+  markdown: {
+    config(md) {
+      const defaultFence = md.renderer.rules.fence
+
+      md.renderer.rules.fence = (tokens, idx, options, env, self) => {
+        const token = tokens[idx]
+        const info = token.info.trim()
+
+        if (info === 'mermaid') {
+          return `<Mermaid code="${encodeURIComponent(token.content)}" />`
+        }
+
+        return defaultFence
+          ? defaultFence(tokens, idx, options, env, self)
+          : self.renderToken(tokens, idx, options)
+      }
+    },
   },
 
   head: [

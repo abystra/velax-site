@@ -104,6 +104,32 @@
   margin: 1.5rem 0;
 }
 
+/* ===== Mermaid Diagrams ===== */
+.mermaid-block {
+  margin: 1.75rem 0;
+  padding: 1rem;
+  overflow-x: auto;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  background: var(--vp-c-bg-soft);
+  box-shadow: var(--vp-c-shadow);
+}
+
+.mermaid-svg {
+  min-width: 640px;
+  text-align: center;
+}
+
+.mermaid-svg svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.mermaid-fallback {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
 .vp-doc code {
   font-size: 0.9em;
   font-family: var(--vp-font-family-mono);
